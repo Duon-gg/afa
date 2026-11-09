@@ -1,0 +1,782 @@
+{
+  "generatedAt": "2026-11-09T06:06:23.068Z",
+  "source": "https://www.un.org/en/site-index",
+  "boundary": "Unique, query-free www.un.org links published in the official English site index",
+  "total": 504,
+  "groups": [
+    {
+      "prefix": "/",
+      "count": 1,
+      "urls": [
+        "https://www.un.org"
+      ]
+    },
+    {
+      "prefix": "/about-us",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/about-us/member-states"
+      ]
+    },
+    {
+      "prefix": "/africarenewal",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/africarenewal"
+      ]
+    },
+    {
+      "prefix": "/ar",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/ar",
+        "https://www.un.org/ar/site-index"
+      ]
+    },
+    {
+      "prefix": "/calendar",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/calendar/en"
+      ]
+    },
+    {
+      "prefix": "/dayof8billion",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/dayof8billion"
+      ]
+    },
+    {
+      "prefix": "/democracyfund",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/democracyfund"
+      ]
+    },
+    {
+      "prefix": "/Depts",
+      "count": 7,
+      "urls": [
+        "https://www.un.org/Depts/dhl/dag/index.html",
+        "https://www.un.org/Depts/german/index.html",
+        "https://www.un.org/Depts/los/index.htm",
+        "https://www.un.org/Depts/oip/closure.html",
+        "https://www.un.org/Depts/ptd",
+        "https://www.un.org/Depts/unmovic",
+        "https://www.un.org/Depts/unscom"
+      ]
+    },
+    {
+      "prefix": "/development",
+      "count": 8,
+      "urls": [
+        "https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html",
+        "https://www.un.org/development/desa/dspd",
+        "https://www.un.org/development/desa/dspd/sport-development-peace.html",
+        "https://www.un.org/development/desa/en",
+        "https://www.un.org/development/desa/indigenouspeoples",
+        "https://www.un.org/development/desa/indigenouspeoples/unpfii-sessions-2.html",
+        "https://www.un.org/development/desa/pd",
+        "https://www.un.org/development/desa/youth"
+      ]
+    },
+    {
+      "prefix": "/dgacm",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/dgacm/en/news/eStatements"
+      ]
+    },
+    {
+      "prefix": "/disarmament",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/disarmament",
+        "https://www.un.org/disarmament/convarms/Register"
+      ]
+    },
+    {
+      "prefix": "/dppa",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/dppa/decolonization/en"
+      ]
+    },
+    {
+      "prefix": "/en",
+      "count": 414,
+      "urls": [
+        "https://www.un.org/en",
+        "https://www.un.org/en/A4P",
+        "https://www.un.org/en/StopRedSeaSpill",
+        "https://www.un.org/en/about-us",
+        "https://www.un.org/en/about-us/copyright",
+        "https://www.un.org/en/about-us/fraud-alert",
+        "https://www.un.org/en/about-us/frequently-asked-questions",
+        "https://www.un.org/en/about-us/growth-in-un-membership",
+        "https://www.un.org/en/about-us/history-of-the-un",
+        "https://www.un.org/en/about-us/history-of-the-un/1941-1950",
+        "https://www.un.org/en/about-us/history-of-the-un/preparatory-years",
+        "https://www.un.org/en/about-us/how-to-donate-to-the-un-system",
+        "https://www.un.org/en/about-us/main-bodies",
+        "https://www.un.org/en/about-us/member-states",
+        "https://www.un.org/en/about-us/nobel-peace-prize",
+        "https://www.un.org/en/about-us/privacy-notice",
+        "https://www.un.org/en/about-us/secretariat",
+        "https://www.un.org/en/about-us/terms-of-use",
+        "https://www.un.org/en/about-us/trusteeship-council",
+        "https://www.un.org/en/about-us/un-and-sustainability",
+        "https://www.un.org/en/about-us/un-charter",
+        "https://www.un.org/en/about-us/un-charter/statute-of-the-international-court-of-justice",
+        "https://www.un.org/en/about-us/un-emblem-and-flag",
+        "https://www.un.org/en/about-us/un-system",
+        "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+        "https://www.un.org/en/africa/osaa",
+        "https://www.un.org/en/annualreport",
+        "https://www.un.org/en/auditors/board",
+        "https://www.un.org/en/auditors/panel",
+        "https://www.un.org/en/awake-at-night",
+        "https://www.un.org/en/beyondgdp",
+        "https://www.un.org/en/black-sea-grain-initiative",
+        "https://www.un.org/en/civil-society/list-csos-associated-department-global-communications",
+        "https://www.un.org/en/civilsociety",
+        "https://www.un.org/en/climatechange",
+        "https://www.un.org/en/climatechange/2019-climate-action-summit",
+        "https://www.un.org/en/common-agenda",
+        "https://www.un.org/en/conf/ldc",
+        "https://www.un.org/en/conf/migration",
+        "https://www.un.org/en/conferences",
+        "https://www.un.org/en/conferences/environment/newyork2000",
+        "https://www.un.org/en/conferences/environment/newyork2005",
+        "https://www.un.org/en/conferences/npt2020",
+        "https://www.un.org/en/conferences/treaty-on-the-non-proliferation-of-nuclear-weapons-npt-2026",
+        "https://www.un.org/en/contact-us-0",
+        "https://www.un.org/en/content/action-agenda-on-internal-displacement",
+        "https://www.un.org/en/content/action-for-human-rights/index.shtml",
+        "https://www.un.org/en/content/codeofconduct",
+        "https://www.un.org/en/content/digital-cooperation-roadmap",
+        "https://www.un.org/en/content/disabilitystrategy",
+        "https://www.un.org/en/content/summits2021",
+        "https://www.un.org/en/content/summits2022",
+        "https://www.un.org/en/coronavirus",
+        "https://www.un.org/en/coronavirus/women-rise-for-all",
+        "https://www.un.org/en/countering-disinformation",
+        "https://www.un.org/en/counterterrorism",
+        "https://www.un.org/en/department-global-communications",
+        "https://www.un.org/en/digital-financing-taskforce",
+        "https://www.un.org/en/durban-20-anniversary",
+        "https://www.un.org/en/ecosoc",
+        "https://www.un.org/en/engaging-with-difficult-histories",
+        "https://www.un.org/en/essential-un",
+        "https://www.un.org/en/ethics",
+        "https://www.un.org/en/events-and-news",
+        "https://www.un.org/en/events/chemistry2011/index.shtml",
+        "https://www.un.org/en/events/chernobyl/25anniversary",
+        "https://www.un.org/en/events/coopsyear",
+        "https://www.un.org/en/events/crimecongress2015",
+        "https://www.un.org/en/events/iypad2011/index.shtml",
+        "https://www.un.org/en/events/mandeladay",
+        "https://www.un.org/en/events/olympictruce",
+        "https://www.un.org/en/events/righttodevelopment/index.shtml",
+        "https://www.un.org/en/events/slaveryremembranceday",
+        "https://www.un.org/en/events/sustainableenergyforall",
+        "https://www.un.org/en/events/televisionday",
+        "https://www.un.org/en/events/worldwateryear",
+        "https://www.un.org/en/famine-prevention-and-response",
+        "https://www.un.org/en/fight-racism",
+        "https://www.un.org/en/focus/sea-level-rise",
+        "https://www.un.org/en/ga",
+        "https://www.un.org/en/ga/62/plenary/summitsmdgreform/bkg.shtml",
+        "https://www.un.org/en/ga/about/subsidiary/boards.shtml",
+        "https://www.un.org/en/ga/about/subsidiary/commissions.shtml",
+        "https://www.un.org/en/ga/about/subsidiary/committees.shtml",
+        "https://www.un.org/en/ga/about/subsidiary/councils.shtml",
+        "https://www.un.org/en/ga/about/subsidiary/index.shtml",
+        "https://www.un.org/en/ga/about/subsidiary/other.shtml",
+        "https://www.un.org/en/ga/aidsmeeting2011",
+        "https://www.un.org/en/ga/coi",
+        "https://www.un.org/en/ga/credentials/credentials.shtml",
+        "https://www.un.org/en/ga/desertification2011",
+        "https://www.un.org/en/ga/documents/pvsr.asp",
+        "https://www.un.org/en/ga/durbanmeeting2011",
+        "https://www.un.org/en/ga/fifth/index.shtml",
+        "https://www.un.org/en/ga/first/index.shtml",
+        "https://www.un.org/en/ga/fourth/index.shtml",
+        "https://www.un.org/en/ga/general/general.shtml",
+        "https://www.un.org/en/ga/maincommittees/index.shtml",
+        "https://www.un.org/en/ga/ncdmeeting2011",
+        "https://www.un.org/en/ga/second/index.shtml",
+        "https://www.un.org/en/ga/sixth/index.shtml",
+        "https://www.un.org/en/ga/third/index.shtml",
+        "https://www.un.org/en/gender-equality-acceleration-plan",
+        "https://www.un.org/en/genocide-prevention",
+        "https://www.un.org/en/get-involved",
+        "https://www.un.org/en/get-involved/social-media",
+        "https://www.un.org/en/global-issues",
+        "https://www.un.org/en/global-issues/africa",
+        "https://www.un.org/en/global-issues/ageing",
+        "https://www.un.org/en/global-issues/aids",
+        "https://www.un.org/en/global-issues/artificial-intelligence",
+        "https://www.un.org/en/global-issues/atomic-energy",
+        "https://www.un.org/en/global-issues/big-data-for-sustainable-development",
+        "https://www.un.org/en/global-issues/child-and-youth-safety-online",
+        "https://www.un.org/en/global-issues/children",
+        "https://www.un.org/en/global-issues/climate-change",
+        "https://www.un.org/en/global-issues/countering-terrorism",
+        "https://www.un.org/en/global-issues/crisis-and-emergency-response",
+        "https://www.un.org/en/global-issues/decolonization",
+        "https://www.un.org/en/global-issues/democracy",
+        "https://www.un.org/en/global-issues/disarmament",
+        "https://www.un.org/en/global-issues/drugs",
+        "https://www.un.org/en/global-issues/ending-poverty",
+        "https://www.un.org/en/global-issues/food",
+        "https://www.un.org/en/global-issues/gender-equality",
+        "https://www.un.org/en/global-issues/health",
+        "https://www.un.org/en/global-issues/human-rights",
+        "https://www.un.org/en/global-issues/human-settlements",
+        "https://www.un.org/en/global-issues/international-law-and-justice",
+        "https://www.un.org/en/global-issues/migration",
+        "https://www.un.org/en/global-issues/multilateral-system",
+        "https://www.un.org/en/global-issues/oceans-and-the-law-of-the-sea",
+        "https://www.un.org/en/global-issues/outer-space",
+        "https://www.un.org/en/global-issues/peace-and-security",
+        "https://www.un.org/en/global-issues/population",
+        "https://www.un.org/en/global-issues/refugees",
+        "https://www.un.org/en/global-issues/water",
+        "https://www.un.org/en/global-issues/youth",
+        "https://www.un.org/en/global-risk-report",
+        "https://www.un.org/en/globalceasefire",
+        "https://www.un.org/en/hate-speech",
+        "https://www.un.org/en/healthy-workforce-home",
+        "https://www.un.org/en/high-level-week-2023",
+        "https://www.un.org/en/high-level-week-2024",
+        "https://www.un.org/en/high-level-week-2025",
+        "https://www.un.org/en/high-level-week-2026",
+        "https://www.un.org/en/holocaustremembrance",
+        "https://www.un.org/en/information-integrity",
+        "https://www.un.org/en/internaljustice",
+        "https://www.un.org/en/internaljustice/oaj",
+        "https://www.un.org/en/issues/food/taskforce",
+        "https://www.un.org/en/library",
+        "https://www.un.org/en/library/page/databases",
+        "https://www.un.org/en/library/page/united-nations-depository-library-programme",
+        "https://www.un.org/en/live/daily-pulse",
+        "https://www.un.org/en/media/accreditation",
+        "https://www.un.org/en/memorial",
+        "https://www.un.org/en/memorial/algiers2007.shtml",
+        "https://www.un.org/en/memorial/baghdad2003.shtml",
+        "https://www.un.org/en/memorial/haiti",
+        "https://www.un.org/en/memorial/hammarskjold50.shtml",
+        "https://www.un.org/en/migration2022",
+        "https://www.un.org/en/mop",
+        "https://www.un.org/en/mun",
+        "https://www.un.org/en/node/133272",
+        "https://www.un.org/en/observances",
+        "https://www.un.org/en/observances/Multilateralism-for-Peace-day",
+        "https://www.un.org/en/observances/africa-industrialization-day",
+        "https://www.un.org/en/observances/albinism-day",
+        "https://www.un.org/en/observances/anti-colonialism-day",
+        "https://www.un.org/en/observances/anti-corruption-day",
+        "https://www.un.org/en/observances/anti-islamophobia-day",
+        "https://www.un.org/en/observances/arabian-leopard-day",
+        "https://www.un.org/en/observances/arabiclanguageday",
+        "https://www.un.org/en/observances/asteroid-day",
+        "https://www.un.org/en/observances/autism-day",
+        "https://www.un.org/en/observances/bee-day",
+        "https://www.un.org/en/observances/bicycle-day",
+        "https://www.un.org/en/observances/biological-diversity-day",
+        "https://www.un.org/en/observances/braille-day",
+        "https://www.un.org/en/observances/care-and-support-day",
+        "https://www.un.org/en/observances/charity-day",
+        "https://www.un.org/en/observances/chemical-warfare-victims-day",
+        "https://www.un.org/en/observances/chernobyl-remembrance-day",
+        "https://www.un.org/en/observances/child-sexual-exploitation-prevention-and-healing-day",
+        "https://www.un.org/en/observances/child-victim-day",
+        "https://www.un.org/en/observances/cities-day",
+        "https://www.un.org/en/observances/civil-aviation-day",
+        "https://www.un.org/en/observances/clean-air-day",
+        "https://www.un.org/en/observances/clean-energy-day",
+        "https://www.un.org/en/observances/commemoration-holocaust-victims-day",
+        "https://www.un.org/en/observances/conscience-day",
+        "https://www.un.org/en/observances/cooperatives-day",
+        "https://www.un.org/en/observances/creativity-and-innovation-day",
+        "https://www.un.org/en/observances/cultural-diversity-day",
+        "https://www.un.org/en/observances/day-against-unilateral-coercive-measures",
+        "https://www.un.org/en/observances/day-for-eradicating-poverty",
+        "https://www.un.org/en/observances/day-of-combating-sand-and-dust-storms",
+        "https://www.un.org/en/observances/day-of-persons-with-disabilities",
+        "https://www.un.org/en/observances/deafblindness-day",
+        "https://www.un.org/en/observances/decade-people-african-descent",
+        "https://www.un.org/en/observances/delegates-day",
+        "https://www.un.org/en/observances/democracy-day",
+        "https://www.un.org/en/observances/desertification-day",
+        "https://www.un.org/en/observances/detained-staff-day",
+        "https://www.un.org/en/observances/development-information-day",
+        "https://www.un.org/en/observances/diabetes-day",
+        "https://www.un.org/en/observances/disarmament-non-proliferation-awareness-day",
+        "https://www.un.org/en/observances/disarmament-week",
+        "https://www.un.org/en/observances/disaster-reduction-day",
+        "https://www.un.org/en/observances/down-syndrome-day",
+        "https://www.un.org/en/observances/earth-day",
+        "https://www.un.org/en/observances/earthquake-victims-day",
+        "https://www.un.org/en/observances/education-day",
+        "https://www.un.org/en/observances/elder-abuse-awareness-day",
+        "https://www.un.org/en/observances/end-drug-abuse-day",
+        "https://www.un.org/en/observances/end-fistula-day",
+        "https://www.un.org/en/observances/end-food-waste-day",
+        "https://www.un.org/en/observances/end-human-trafficking-day",
+        "https://www.un.org/en/observances/end-illegal-fishing-day",
+        "https://www.un.org/en/observances/end-impunity-crimes-against-journalists",
+        "https://www.un.org/en/observances/end-nuclear-tests-day",
+        "https://www.un.org/en/observances/end-racism-day",
+        "https://www.un.org/en/observances/end-sexual-violence-in-conflict-day",
+        "https://www.un.org/en/observances/ending-violence-against-women-day",
+        "https://www.un.org/en/observances/english-language-day",
+        "https://www.un.org/en/observances/environment-day",
+        "https://www.un.org/en/observances/environment-in-war-protection-day",
+        "https://www.un.org/en/observances/epidemic-preparedness-day",
+        "https://www.un.org/en/observances/equal-pay-day",
+        "https://www.un.org/en/observances/fair-play-day",
+        "https://www.un.org/en/observances/female-genital-mutilation-day",
+        "https://www.un.org/en/observances/food-safety-day",
+        "https://www.un.org/en/observances/football-day",
+        "https://www.un.org/en/observances/forests-and-trees-day",
+        "https://www.un.org/en/observances/friendship-day",
+        "https://www.un.org/en/observances/genocide-prevention-day",
+        "https://www.un.org/en/observances/girl-child-day",
+        "https://www.un.org/en/observances/habitat-day",
+        "https://www.un.org/en/observances/happiness-day",
+        "https://www.un.org/en/observances/hope-day",
+        "https://www.un.org/en/observances/horse-day",
+        "https://www.un.org/en/observances/human-fraternity",
+        "https://www.un.org/en/observances/human-rights-day",
+        "https://www.un.org/en/observances/human-solidarity-day",
+        "https://www.un.org/en/observances/human-spaceflight-day",
+        "https://www.un.org/en/observances/humanitarian-day",
+        "https://www.un.org/en/observances/indigenous-day",
+        "https://www.un.org/en/observances/indigenous-women-day",
+        "https://www.un.org/en/observances/information-access-day",
+        "https://www.un.org/en/observances/interfaith-harmony-week",
+        "https://www.un.org/en/observances/international-day-for-dialogue-among-civilizations",
+        "https://www.un.org/en/observances/international-day-of-banks",
+        "https://www.un.org/en/observances/international-day-of-families",
+        "https://www.un.org/en/observances/international-day-of-play",
+        "https://www.un.org/en/observances/international-day-of-solidarity-with-the-palestinian-people",
+        "https://www.un.org/en/observances/international-day-peace",
+        "https://www.un.org/en/observances/international-days-and-weeks",
+        "https://www.un.org/en/observances/international-decades",
+        "https://www.un.org/en/observances/international-nowruz-day",
+        "https://www.un.org/en/observances/international-translation-day",
+        "https://www.un.org/en/observances/international-years",
+        "https://www.un.org/en/observances/interventional-cardiology-day",
+        "https://www.un.org/en/observances/jazz-day",
+        "https://www.un.org/en/observances/judicial-well-being-day",
+        "https://www.un.org/en/observances/kiswahili-day",
+        "https://www.un.org/en/observances/landlocked-developing-countries-day",
+        "https://www.un.org/en/observances/living-in-peace-day",
+        "https://www.un.org/en/observances/maritime-day",
+        "https://www.un.org/en/observances/markhor-day",
+        "https://www.un.org/en/observances/meditation-day",
+        "https://www.un.org/en/observances/micro-small-medium-businesses-day",
+        "https://www.un.org/en/observances/migrants-day",
+        "https://www.un.org/en/observances/mine-awareness-day",
+        "https://www.un.org/en/observances/mother-language-day",
+        "https://www.un.org/en/observances/mountain-day",
+        "https://www.un.org/en/observances/neutrality-day",
+        "https://www.un.org/en/observances/non-self-governing-week",
+        "https://www.un.org/en/observances/non-violence-day",
+        "https://www.un.org/en/observances/nuclear-weapons-elimination-day",
+        "https://www.un.org/en/observances/oceans-day",
+        "https://www.un.org/en/observances/older-persons-day",
+        "https://www.un.org/en/observances/ozone-day",
+        "https://www.un.org/en/observances/parents-day",
+        "https://www.un.org/en/observances/parliamentarism-day",
+        "https://www.un.org/en/observances/peaceful-coexistence-day",
+        "https://www.un.org/en/observances/peacekeepers-day",
+        "https://www.un.org/en/observances/potato-day",
+        "https://www.un.org/en/observances/press-freedom-day",
+        "https://www.un.org/en/observances/protect-education-day",
+        "https://www.un.org/en/observances/public-service-day",
+        "https://www.un.org/en/observances/radio-day",
+        "https://www.un.org/en/observances/refugee-day",
+        "https://www.un.org/en/observances/religious-based-violence-victims-day",
+        "https://www.un.org/en/observances/remittances-day",
+        "https://www.un.org/en/observances/right-to-truth-day",
+        "https://www.un.org/en/observances/road-traffic-victims-day",
+        "https://www.un.org/en/observances/rural-development-day",
+        "https://www.un.org/en/observances/rural-women-day",
+        "https://www.un.org/en/observances/seagrass-day",
+        "https://www.un.org/en/observances/second-world-war-remembrance-days",
+        "https://www.un.org/en/observances/sign-languages-day",
+        "https://www.un.org/en/observances/slavery-abolition-day",
+        "https://www.un.org/en/observances/snow-leopard-day",
+        "https://www.un.org/en/observances/social-justice-day",
+        "https://www.un.org/en/observances/solstice-day",
+        "https://www.un.org/en/observances/south-south-cooperation-day",
+        "https://www.un.org/en/observances/sport-day",
+        "https://www.un.org/en/observances/srebrenica-genocide-commemoration-day",
+        "https://www.un.org/en/observances/statistics-day",
+        "https://www.un.org/en/observances/steelpan-day",
+        "https://www.un.org/en/observances/sustainable-gastronomy-day",
+        "https://www.un.org/en/observances/sustainable-transport-day",
+        "https://www.un.org/en/observances/tea-day",
+        "https://www.un.org/en/observances/telecommunication-day",
+        "https://www.un.org/en/observances/terrorism-victims-day",
+        "https://www.un.org/en/observances/toilet-day",
+        "https://www.un.org/en/observances/torture-victims-day",
+        "https://www.un.org/en/observances/tourism-day",
+        "https://www.un.org/en/observances/tourism-resilience-day",
+        "https://www.un.org/en/observances/transatlantic-slave-trade",
+        "https://www.un.org/en/observances/tropics-day",
+        "https://www.un.org/en/observances/tsunami-awareness-day",
+        "https://www.un.org/en/observances/tuna-day",
+        "https://www.un.org/en/observances/un-anniversaries",
+        "https://www.un.org/en/observances/un-day",
+        "https://www.un.org/en/observances/universal-health-coverage-day",
+        "https://www.un.org/en/observances/vesak-day",
+        "https://www.un.org/en/observances/victims-enforced-disappearance",
+        "https://www.un.org/en/observances/volunteer-day",
+        "https://www.un.org/en/observances/water-day",
+        "https://www.un.org/en/observances/wellness-day",
+        "https://www.un.org/en/observances/widows-day",
+        "https://www.un.org/en/observances/women-and-girls-in-science-day",
+        "https://www.un.org/en/observances/women-girls-african-descent",
+        "https://www.un.org/en/observances/women-in-diplomacy-day",
+        "https://www.un.org/en/observances/womens-day",
+        "https://www.un.org/en/observances/work-safety-day",
+        "https://www.un.org/en/observances/world-aids-day",
+        "https://www.un.org/en/observances/world-basketball-day",
+        "https://www.un.org/en/observances/world-chess-day",
+        "https://www.un.org/en/observances/world-childrens-day",
+        "https://www.un.org/en/observances/world-day-against-child-labour",
+        "https://www.un.org/en/observances/world-glaciers-day",
+        "https://www.un.org/en/observances/world-lake-day",
+        "https://www.un.org/en/observances/world-population-day",
+        "https://www.un.org/en/observances/world-post-day",
+        "https://www.un.org/en/observances/world-pulses-day",
+        "https://www.un.org/en/observances/world-science-day",
+        "https://www.un.org/en/observances/world-science-day/week",
+        "https://www.un.org/en/observances/world-soil-day",
+        "https://www.un.org/en/observances/world-space-week",
+        "https://www.un.org/en/observances/world-television-day",
+        "https://www.un.org/en/observances/world-wildlife-day",
+        "https://www.un.org/en/observances/world-youth-skills-day",
+        "https://www.un.org/en/observances/yoga-day",
+        "https://www.un.org/en/observances/youth-day",
+        "https://www.un.org/en/observances/zero-waste-day",
+        "https://www.un.org/en/ombudsman",
+        "https://www.un.org/en/our-work",
+        "https://www.un.org/en/our-work/commission-of-inquiry-for-mali",
+        "https://www.un.org/en/our-work/deliver-humanitarian-aid",
+        "https://www.un.org/en/our-work/documents",
+        "https://www.un.org/en/our-work/global-health-crises-task-force",
+        "https://www.un.org/en/our-work/maintain-international-peace-and-security",
+        "https://www.un.org/en/our-work/official-languages",
+        "https://www.un.org/en/our-work/protect-human-rights",
+        "https://www.un.org/en/our-work/support-sustainable-development-and-climate-action",
+        "https://www.un.org/en/our-work/uphold-international-law",
+        "https://www.un.org/en/pacific-unic",
+        "https://www.un.org/en/pdfs/18-00159e_un_system_chart_17x11_4c_en_web.pdf",
+        "https://www.un.org/en/peace-and-security/day-life-peacekeeper-cyprus",
+        "https://www.un.org/en/peaceandsecurity",
+        "https://www.un.org/en/peacekeeping",
+        "https://www.un.org/en/preventgenocide/rwanda",
+        "https://www.un.org/en/preventgenocide/rwanda/commemoration/annualcommemoration.shtml",
+        "https://www.un.org/en/preventgenocide/rwanda/index.shtml",
+        "https://www.un.org/en/refugee-15-community-builder-today",
+        "https://www.un.org/en/safety-journalists",
+        "https://www.un.org/en/sc/1540",
+        "https://www.un.org/en/sdg-stimulus",
+        "https://www.un.org/en/sections/web-governance/minimum-standards-multilingualism-united-nations-websites/index.html",
+        "https://www.un.org/en/sg-digital-cooperation-panel",
+        "https://www.un.org/en/site-index",
+        "https://www.un.org/en/situation-in-occupied-palestine-and-israel",
+        "https://www.un.org/en/solutions-to-internal-displacement",
+        "https://www.un.org/en/spotlight",
+        "https://www.un.org/en/spotlight-initiative/index.shtml",
+        "https://www.un.org/en/spotlight-on-afghanistan",
+        "https://www.un.org/en/spotlight-on-central-african-republic",
+        "https://www.un.org/en/spotlight-on-drcongo",
+        "https://www.un.org/en/spotlight-on-ebola",
+        "https://www.un.org/en/spotlight-on-gaza",
+        "https://www.un.org/en/spotlight-on-haiti",
+        "https://www.un.org/en/spotlight-on-iran",
+        "https://www.un.org/en/spotlight-on-lebanon",
+        "https://www.un.org/en/spotlight-on-myanmar",
+        "https://www.un.org/en/spotlight-on-sudan",
+        "https://www.un.org/en/spotlight-on-syria",
+        "https://www.un.org/en/spotlight-on-ukraine",
+        "https://www.un.org/en/spotlight-on-yemen",
+        "https://www.un.org/en/summit-of-the-future",
+        "https://www.un.org/en/summits2019",
+        "https://www.un.org/en/transforming-education-summit",
+        "https://www.un.org/en/turkiye-syria-earthquake-response",
+        "https://www.un.org/en/un-civil-society-conference",
+        "https://www.un.org/en/un-university-centre-policy-research-positioning-youth-showcase-their-contributions",
+        "https://www.un.org/en/un75",
+        "https://www.un.org/en/un80",
+        "https://www.un.org/en/unpdf/index.shtml",
+        "https://www.un.org/en/victims-rights-first",
+        "https://www.un.org/en/video",
+        "https://www.un.org/en/webaccessibility",
+        "https://www.un.org/en/yearbook"
+      ]
+    },
+    {
+      "prefix": "/es",
+      "count": 3,
+      "urls": [
+        "https://www.un.org/es/index.html",
+        "https://www.un.org/es/observances/spanish-language-day",
+        "https://www.un.org/es/site-index"
+      ]
+    },
+    {
+      "prefix": "/esa",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/esa/ffd"
+      ]
+    },
+    {
+      "prefix": "/fr",
+      "count": 3,
+      "urls": [
+        "https://www.un.org/fr/index.html",
+        "https://www.un.org/fr/observances/french-language-day",
+        "https://www.un.org/fr/site-index"
+      ]
+    },
+    {
+      "prefix": "/ga",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/ga/acabq",
+        "https://www.un.org/ga/iaac"
+      ]
+    },
+    {
+      "prefix": "/geospatial",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/geospatial/mapsgeo"
+      ]
+    },
+    {
+      "prefix": "/law",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/law/ilc"
+      ]
+    },
+    {
+      "prefix": "/lgbtiq-people",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/lgbtiq-people"
+      ]
+    },
+    {
+      "prefix": "/library",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/library"
+      ]
+    },
+    {
+      "prefix": "/millenniumgoals",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/millenniumgoals"
+      ]
+    },
+    {
+      "prefix": "/ohrlls",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/ohrlls/content/least-developed-countries"
+      ]
+    },
+    {
+      "prefix": "/other",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/other/afics"
+      ]
+    },
+    {
+      "prefix": "/pact-for-the-future",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/pact-for-the-future/en"
+      ]
+    },
+    {
+      "prefix": "/partnerships",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/partnerships"
+      ]
+    },
+    {
+      "prefix": "/peacebuilding",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/peacebuilding/commission"
+      ]
+    },
+    {
+      "prefix": "/pga",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/pga",
+        "https://www.un.org/pga/80/about/past-presidents"
+      ]
+    },
+    {
+      "prefix": "/press",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/press/en"
+      ]
+    },
+    {
+      "prefix": "/preventing-sexual-exploitation-and-abuse",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/preventing-sexual-exploitation-and-abuse"
+      ]
+    },
+    {
+      "prefix": "/ru",
+      "count": 3,
+      "urls": [
+        "https://www.un.org/ru/index.html",
+        "https://www.un.org/ru/observances/russian-language-day",
+        "https://www.un.org/ru/site-index"
+      ]
+    },
+    {
+      "prefix": "/sc",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/sc/ctc"
+      ]
+    },
+    {
+      "prefix": "/sdgmediazone",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/sdgmediazone"
+      ]
+    },
+    {
+      "prefix": "/securitycouncil",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/securitycouncil",
+        "https://www.un.org/securitycouncil/sanctions/information"
+      ]
+    },
+    {
+      "prefix": "/sexualviolenceinconflict",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/sexualviolenceinconflict"
+      ]
+    },
+    {
+      "prefix": "/sg",
+      "count": 18,
+      "urls": [
+        "https://www.un.org/sg",
+        "https://www.un.org/sg/content/trygve-halvdan-lie",
+        "https://www.un.org/sg/en",
+        "https://www.un.org/sg/en/content/asha-rose-migiro-former-deputy-secretary-general",
+        "https://www.un.org/sg/en/content/boutros-boutros-ghali",
+        "https://www.un.org/sg/en/content/former-secretaries-general",
+        "https://www.un.org/sg/en/content/javier-perez-de-cuellar",
+        "https://www.un.org/sg/en/content/kofi-annan",
+        "https://www.un.org/sg/en/content/kurt-waldheim",
+        "https://www.un.org/sg/en/content/louise-fr%C3%A9chette-former-deputy-secretary-general",
+        "https://www.un.org/sg/en/content/mark-malloch-brown-former-deputy-secretary-general",
+        "https://www.un.org/sg/en/content/sg/biography",
+        "https://www.un.org/sg/en/content/trygve-halvdan-lie",
+        "https://www.un.org/sg/en/content/u-thant",
+        "https://www.un.org/sg/en/dsg/index.shtml",
+        "https://www.un.org/sg/en/formersg/ban.shtml",
+        "https://www.un.org/sg/en/formersg/dag.shtml",
+        "https://www.un.org/sg/spokesperson"
+      ]
+    },
+    {
+      "prefix": "/sites",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/sites/un2.un.org/files/un_card_2026_e.pdf",
+        "https://www.un.org/sites/un2.un.org/themes/bootstrap_un2/favicon.ico"
+      ]
+    },
+    {
+      "prefix": "/summits2023",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/summits2023"
+      ]
+    },
+    {
+      "prefix": "/sustainabledevelopment",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/sustainabledevelopment",
+        "https://www.un.org/sustainabledevelopment/climate-change-2"
+      ]
+    },
+    {
+      "prefix": "/technologybank",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/technologybank"
+      ]
+    },
+    {
+      "prefix": "/un80-initiative",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/un80-initiative/en"
+      ]
+    },
+    {
+      "prefix": "/unispal",
+      "count": 2,
+      "urls": [
+        "https://www.un.org/unispal",
+        "https://www.un.org/unispal/data-collection"
+      ]
+    },
+    {
+      "prefix": "/washington",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/washington"
+      ]
+    },
+    {
+      "prefix": "/webguidelines",
+      "count": 1,
+      "urls": [
+        "https://www.un.org/webguidelines"
+      ]
+    },
+    {
+      "prefix": "/zh",
+      "count": 3,
+      "urls": [
+        "https://www.un.org/zh",
+        "https://www.un.org/zh/events/chineselanguageday",
+        "https://www.un.org/zh/site-index"
+      ]
+    }
+  ]
+}
