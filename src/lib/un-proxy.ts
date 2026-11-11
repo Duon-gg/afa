@@ -41,7 +41,7 @@ function languageSwitch(path: string, vietnamese: boolean) {
 
 export function rewriteEnglishHtml(html: string, path: string) {
   const localized = absolutizeAssets(localizeEnglishLinks(html));
-  return localized.replace(/<\/body>/i, `${languageSwitch(path, false)}</body>`);
+  return localized.replace(/<title[^>]*>[\s\S]*?<\/title>/i, "<title>AFA</title>").replace(/<\/body>/i, `${languageSwitch(path, false)}</body>`);
 }
 
 async function translateBatch(texts: string[]) {
@@ -85,6 +85,7 @@ export async function translateHtml(html: string, path: string) {
 
   const localized = absolutizeAssets(localizeVietnameseLinks(parts.join("")));
   return localized
+    .replace(/<title[^>]*>[\s\S]*?<\/title>/i, "<title>AFA</title>")
     .replace(/<html(\s[^>]*)?\blang=["'][^"']*["']/i, '<html$1 lang="vi"')
     .replace(/<\/body>/i, `${languageSwitch(path, true)}</body>`);
 }
