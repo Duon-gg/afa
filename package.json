@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node scripts/check-un-proxy.mjs && node scripts/check-manifest-verifier.mjs",
+    "verify:urls": "node scripts/verify-manifest-urls.mjs"
   },
   "dependencies": {
     "next": "16.4.5",

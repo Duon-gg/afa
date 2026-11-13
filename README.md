@@ -37,3 +37,18 @@ The confirmed scope contains many independently maintained systems on one host a
 Running the mirror requires network access to `www.un.org` and Google Translate's public web endpoint. Translation is automatic and has not received editorial review. Some third-party live embeds can reject localhost origins; the UN Pulse WebSocket is the observed example. No deployment configuration is included.
 
 This project is an independent technical reproduction and is not an official United Nations website.
+
+## Translation resilience and verification
+
+English pages retain their source title. Vietnamese pages translate the title along with text and use an Arial / DejaVu Sans stack supporting Vietnamese accents, while preserving icon fonts. If translation fails, the complete original page is returned with a Vietnamese notice and `Content-Language: en`.
+
+Successful HTML responses use a one-hour shared CDN cache with one-day stale-while-revalidate. Fallback pages use a 30-second cache so translation can recover quickly. Upstream HTML is cached for one hour by Next.js; translation batch responses are cached for seven days. Translation runs at most three batches concurrently with an eight-second total translation deadline. Cold requests and upstream outages can still fail; caching does not guarantee elimination of all 429/504 responses.
+
+```bash
+npm test
+npm run verify:urls -- --base-url https://YOUR-DEPLOYMENT.vercel.app
+```
+
+The verifier checks all 504 manifest entries in both languages (1,008 requests) with four workers by default. It writes `verify-manifest-report.json`, reports HTTP status counts, success rates, translation fallbacks, redirect chains and network errors, and exits nonzero for failed requests. Use `--concurrency 2`, `--timeout 25000`, `--limit 10`, or `--output report.json` as needed. Run only against a deployment you intend to verify. A fallback HTTP 200 counts as available and is separately reported as a translation fallback.
+
+Manifest paths under `/en` map to `/vi`; other source paths retain their original English-side route and map to `/vi/_sites/...`. Prefixing every independent source URL with `/en` would request a different upstream page. Redirects leaving the deployment or switching between English and Vietnamese routes are flagged; all other redirect chains remain visible in the report for review.
