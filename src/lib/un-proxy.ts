@@ -108,15 +108,33 @@ async function translateBatch(texts: string[], signal: AbortSignal) {
   return segments;
 }
 
+export function capitalizeVietnamese(text: string, startsSentence: boolean) {
+  const capitalize = (letter: string) => letter.toLocaleUpperCase("vi-VN");
+  const initial = startsSentence
+    ? text.replace(/^([^\p{L}\p{N}]*)(\p{Ll})/u, (_match, prefix, letter) => prefix + capitalize(letter))
+    : text;
+  return initial.replace(/([.!?\u2026][\s"'\u201c\u201d\u2018\u2019)\]]+)(\p{Ll})/gu,
+    (_match, prefix, letter) => prefix + capitalize(letter));
+}
+
 export async function translateHtml(html: string, path: string) {
-  const parts = html.split(/(<(?:script|style|noscript|svg)\b[\s\S]*?<\/(?:script|style|noscript|svg)>|<[^>]+>)/gi);
-  const candidates = parts
-    .map((part, index) => {
-      const leading = part.match(/^\s*/)?.[0] ?? "";
-      const trailing = part.match(/\s*$/)?.[0] ?? "";
-      return { index, leading, trailing, text: part.slice(leading.length, part.length - trailing.length) };
-    })
-    .filter(({ text }) => !text.startsWith("<") && /[A-Za-z]{2}/.test(text) && text.trim().length > 1);
+  // A > or <BR> inside a quoted attribute is not an HTML tag boundary.
+  const parts = html.split(/(<(?:script|style|noscript|svg)\b(?:[^"'<>]|"[^"]*"|'[^']*')*>[\s\S]*?<\/(?:script|style|noscript|svg)>|<!--[\s\S]*?-->|<(?:[^"'<>]|"[^"]*"|'[^']*')+>)/gi);
+  const candidates: { index: number; leading: string; trailing: string; text: string; startsSentence: boolean }[] = [];
+  let startsSentence = true;
+  for (const [index, part] of parts.entries()) {
+    if (part.startsWith("<")) {
+      if (/^<\/?(?:p|h[1-6]|li|div|section|article|blockquote|td|th|title|button)(?:\s|>)/i.test(part)) startsSentence = true;
+      continue;
+    }
+    if (!part.trim()) continue;
+    const leading = part.match(/^\s*/)?.[0] ?? "";
+    const trailing = part.match(/\s*$/)?.[0] ?? "";
+    const text = part.slice(leading.length, part.length - trailing.length);
+    if (/[A-Za-z]{2}/.test(text)) candidates.push({ index, leading, trailing, text, startsSentence });
+    // Inline links/emphasis and line breaks continue the current sentence.
+    startsSentence = /[.!?\u2026]["'\u201c\u201d\u2018\u2019)\]]*$/.test(text);
+  }
 
   const batches: typeof candidates[] = [];
   const controller = new AbortController();
@@ -141,9 +159,9 @@ export async function translateHtml(html: string, path: string) {
       signal.throwIfAborted();
       const batch = batches[cursor++];
       const translated = await translateBatch(batch.map(({ text }) => text), signal);
-      batch.forEach(({ index, leading, trailing }, offset) => {
+      batch.forEach(({ index, leading, trailing, startsSentence }, offset) => {
         // Translation output is text, never trusted HTML.
-        const escaped = translated[offset].replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        const escaped = capitalizeVietnamese(translated[offset], startsSentence).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
         parts[index] = `${leading}${escaped}${trailing}`;
       });
     }
