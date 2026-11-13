@@ -29,25 +29,68 @@ function localizeEnglishLinks(html: string) {
   return html.replace(/(<a\b[^>]*?\bhref=["'])https:\/\/www\.un\.org(\/[^"']*)(["'])/gi, "$1$2$3");
 }
 
-function absolutizeAssets(html: string) {
-  return html.replace(/((?:src|href)=["'])(\/(?:sites|themes|modules|misc|profiles|scripts)\/)/gi, `$1${UN_ORIGIN}$2`);
+// Keep UN stylesheets on this origin so their font requests do not require UN CORS headers.
+function absolutizeAssets(html: string, path: string) {
+  return html
+    .replace(/(<style\b[^>]*>)([\s\S]*?)(<\/style>)/gi, (_match, open, css, close) => `${open}${rewriteStylesheet(css, new URL(sourcePath(path), UN_ORIGIN).href)}${close}`)
+    .replace(/<link\b[^>]*>/gi, (tag) => tag.replace(/(\bhref=["'])([^"']+)(["'])/i, (match, before, href, quote) => {
+      if (!/\.css(?:[?#]|$)/i.test(href) && !/\brel=["']stylesheet["']/i.test(tag)) return match;
+      const resolved = new URL(href.replace(/&amp;/g, "&"), new URL(sourcePath(path), UN_ORIGIN));
+      return resolved.origin === UN_ORIGIN ? `${before}${resolved.pathname}${resolved.search.replace(/&/g, "&amp;")}${resolved.hash}${quote}` : match;
+    }))
+    .replace(/((?:src|href)=["'])(\/(?:sites|themes|modules|misc|profiles|scripts)\/[^"']*)(["'])/gi,
+      (match, before, path, quote) => /\.css(?:[?#]|$)/i.test(path) ? match : `${before}${UN_ORIGIN}${path}${quote}`);
 }
+
+export function rewriteStylesheet(css: string, sourceUrl: string) {
+  const localUrl = (value: string) => {
+    if (/^(?:data:|blob:|#)/i.test(value)) return value;
+    const resolved = new URL(value, sourceUrl);
+    return resolved.origin === UN_ORIGIN
+      ? `${resolved.pathname}${resolved.search}${resolved.hash}`
+      : resolved.href;
+  };
+  return css
+    .replace(/url\(\s*(["']?)([^)"']+?)\1\s*\)/gi, (_match, quote, value) => `url(${quote}${localUrl(value)}${quote})`)
+    .replace(/(@import\s+)(["'])([^"']+)\2/gi, (_match, before, quote, value) => `${before}${quote}${localUrl(value)}${quote}`);
+}
+
+// These two controls must remain visible even when the upstream icon font fails.
+// Mask shapes inherit each control's text color, including hover and focus states.
+const controlIconStyles = `<style id="un-control-icons">
+#search-block-form button .fa-search::before,
+#main-menu li.menu-48684.top-level > a::before,
+#main-menu li.menu-48670.top-level > a::before {
+  content:""!important;display:inline-block;width:1em;height:1em;
+  padding:0!important;vertical-align:-.125em;background-color:currentColor;
+  -webkit-mask:var(--un-control-icon) center/contain no-repeat;
+  mask:var(--un-control-icon) center/contain no-repeat;
+}
+#search-block-form button .fa-search::before {
+  --un-control-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='10' cy='10' r='6.5' fill='none' stroke='black' stroke-width='2.5'/%3E%3Cpath d='m15 15 6 6' stroke='black' stroke-width='2.5'/%3E%3C/svg%3E");
+}
+#main-menu li.menu-48684.top-level > a::before,
+#main-menu li.menu-48670.top-level > a::before {
+  margin-right:5px;
+  --un-control-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='9' fill='none' stroke='black' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3C/svg%3E");
+}
+</style>`;
 
 function languageSwitch(path: string, vietnamese: boolean) {
   const english = sourcePath(path);
   const vietnameseUrl = vietnamesePath(english);
-  return `<nav class="un-clone-language-switch" aria-label="Language"><a href="${english}"${vietnamese ? "" : ' aria-current="page"'}>English</a><span>·</span><a href="${vietnameseUrl}"${vietnamese ? ' aria-current="page"' : ""}>Tiếng Việt</a></nav><style>@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:block;src:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-solid-900.woff2) format("woff2")}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:block;src:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-regular-400.woff2) format("woff2")}@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/webfonts/fa-brands-400.woff2) format("woff2")}.un-clone-language-switch{position:fixed;right:16px;bottom:16px;z-index:2147483647;display:flex;gap:8px;align-items:center;padding:10px 14px;border-radius:4px;background:#fff;color:#333;box-shadow:0 2px 14px #0004;font:700 14px/1.2 Arial,sans-serif}.un-clone-language-switch a{color:#0065a2;text-decoration:none}.un-clone-language-switch a[aria-current=page]{color:#333;text-decoration:underline}</style>`;
+  return `${controlIconStyles}<nav class="un-clone-language-switch" aria-label="Language"><a href="${english}"${vietnamese ? "" : ' aria-current="page"'}>English</a><span>·</span><a href="${vietnameseUrl}"${vietnamese ? ' aria-current="page"' : ""}>Tiếng Việt</a></nav><style>.un-clone-language-switch{position:fixed;right:16px;bottom:16px;z-index:2147483647;display:flex;gap:8px;align-items:center;padding:10px 14px;border-radius:4px;background:#fff;color:#333;box-shadow:0 2px 14px #0004;font:700 14px/1.2 Arial,sans-serif}.un-clone-language-switch a{color:#0065a2;text-decoration:none}.un-clone-language-switch a[aria-current=page]{color:#333;text-decoration:underline}</style>`;
 }
 
 // Arial includes Vietnamese glyphs locally; exclude icon fonts from the override.
-const vietnameseFont = `<style>html[lang="vi"] body,html[lang="vi"] body :where(h1,h2,h3,h4,h5,h6,p,a,li,span,div,td,th,label,input,button,textarea,select):not([class*="fa-"]):not(.fa):not(.fas):not(.far):not(.fab):not([class*="icon"]){font-family:Arial,"DejaVu Sans",sans-serif!important}html[lang="vi"] body{line-height:1.5}.un-translation-notice{position:relative;z-index:2147483646;padding:10px 16px;background:#fff3cd;color:#493800;font:16px/1.5 Arial,sans-serif}</style>`;
+const vietnameseFont = `<style>html[lang="vi"] body,html[lang="vi"] body :where(h1,h2,h3,h4,h5,h6,p,a,li,span,div,td,th,label,input,button,textarea,select):not([class*="fa-"]):not(.fa):not(.fas):not(.far):not(.fab):not([class*="icon"]):not(.fal):not(.fad):not(.fat):not(.fass):not([class*="fa "]):not(.glyphicon):not([class*="glyphicon-"]):not([class*="material-"]):not(.bi){font-family:Arial,"DejaVu Sans",sans-serif!important}html[lang="vi"] body{line-height:1.5}.un-translation-notice{position:relative;z-index:2147483646;padding:10px 16px;background:#fff3cd;color:#493800;font:16px/1.5 Arial,sans-serif}</style>`;
 
 export function fallbackHtml(html: string, path: string) {
   return rewriteEnglishHtml(html, sourcePath(path)).replace(/<body\b[^>]*>/i, '$&<div class="un-translation-notice" role="status" lang="vi">Bản dịch tiếng Việt đang tạm thời xử lý, hiển thị nội dung gốc tiếng Anh</div>' + vietnameseFont);
 }
 
 export function rewriteEnglishHtml(html: string, path: string) {
-  const localized = absolutizeAssets(localizeEnglishLinks(html));
+  const localized = absolutizeAssets(localizeEnglishLinks(html), path);
   return localized.replace(/<\/body>/i, `${languageSwitch(path, false)}</body>`);
 }
 
@@ -109,7 +152,7 @@ export async function translateHtml(html: string, path: string) {
     throw error;
   });
 
-  const localized = absolutizeAssets(localizeVietnameseLinks(parts.join("")));
+  const localized = absolutizeAssets(localizeVietnameseLinks(parts.join("")), path);
   return localized
     .replace(/<html\b([^>]*)>/i, (_match, attrs: string) => `<html${attrs.replace(/\s+lang=["'][^"']*["']/i, "")} lang="vi">`)
     .replace(/<\/body>/i, `${vietnameseFont}${languageSwitch(path, true)}</body>`);
@@ -133,6 +176,13 @@ export async function proxyRequest(request: Request, path: string) {
   headers.delete("last-modified");
   headers.delete("set-cookie");
   headers.set("x-un-clone-source", upstreamUrl.toString());
+
+  if ((headers.get("content-type") ?? "").includes("text/css")) {
+    const css = rewriteStylesheet(await upstream.text(), upstream.url || upstreamUrl.toString());
+    headers.set("content-type", "text/css; charset=utf-8");
+    headers.set("cache-control", upstream.ok ? "public, max-age=3600, s-maxage=86400" : "no-store");
+    return new Response(request.method === "HEAD" ? null : css, { status: upstream.status, headers });
+  }
 
   if (!(headers.get("content-type") ?? "").includes("text/html")) {
     return new Response(request.method === "HEAD" ? null : upstream.body, { status: upstream.status, headers });
